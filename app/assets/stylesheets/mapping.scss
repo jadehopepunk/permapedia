@@ -1,0 +1,11 @@
+.map_container {
+  width: auto;
+
+  #map {
+    width: auto;
+  }  
+}
+
+.span6 > .map_container > #map {
+  height: 230px;
+}

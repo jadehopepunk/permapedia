@@ -1,0 +1,93 @@
+.jumbotron {
+  min-width: 940px;
+
+  .inner {
+    background: url("/assets/home/grid-18px.png") repeat scroll center top transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) inset;
+    padding: 45px 0;
+  }
+  h1, p {
+    color: #FFFFFF;
+    margin-bottom: 9px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+    font-size: 54px;
+    line-height: 1;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    font-weight: 300;
+  }
+  .lead {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  p a {
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+}
+
+.masthead {
+  background-color: #0D4612;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0D4612), to(#258E2D));
+  background-image: -webkit-linear-gradient(#0D4612, #258E2D);
+  background-image: -moz-linear-gradient(#0D4612, #258E2D);
+  background-image: -o-linear-gradient(top, #0D4612, #258E2D);
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#0D4612), to(#258E2D));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0D4612', endColorstr='#258E2D', GradientType=0); /* IE8 and down */
+}
+
+.quickstart {
+  background-color: #F5F5F5;
+  background-image: -moz-linear-gradient(#F9F9F9, #F5F5F5);
+  background-repeat: repeat-x;
+  border-bottom: 1px solid #EEEEEE;
+  border-top: 1px solid #FFFFFF;
+
+  .container {
+    margin-bottom: 0;
+  }
+  
+  .row {
+    box-shadow: 1px 0 0 #F9F9F9;
+    margin: 0 -20px;
+  }
+  
+  [class*="span"] {
+    border-left: 1px solid #EEEEEE;
+    box-shadow: 1px 0 0 #F9F9F9 inset;
+    height: 117px;
+    margin-left: 0;
+    padding: 17px 20px 26px;
+    width: 285px;
+  }
+  [class*="span"]:last-child {
+    border-right: 1px solid #EEEEEE;
+    width: 286px;
+  }
+  h6, p {
+    color: #333333;
+    line-height: 18px;
+    margin-bottom: 9px;
+    text-align: center;
+  }
+  .current-version, .current-version a {
+    color: #999999;
+  }
+  h6 {
+    color: #999999;
+  }
+  textarea {
+    display: block;
+    height: auto;
+    line-height: 21px;
+    margin: 0 0 9px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 275px;
+  }
+}

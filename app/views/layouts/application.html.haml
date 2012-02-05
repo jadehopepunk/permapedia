@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    = render :partial => 'layouts/head'
+  %body
+    = render :partial => 'layouts/topbar'
+    .page_body
+      .container
+        = render :partial => 'layouts/notice'
+        %div{:class => yield(:content_class)}
+          = yield
+    = render :partial => 'layouts/footer'

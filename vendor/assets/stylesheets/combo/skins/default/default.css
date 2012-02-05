@@ -1,0 +1,93 @@
+div.default {
+    white-space: nowrap;
+    height: 21px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 146px;
+}
+
+div.default input {
+    margin: 0 0 0 0;
+    font:normal 12px tahoma, arial, helvetica, sans-serif;
+    padding:1px 3px;
+    background:#fff url(/assets/combo/text-bg.gif) repeat-x 0 0;
+    border:1px solid #B5B8C8;
+    height: 18px;
+    line-height:18px;
+    vertical-align:middle; 
+    left: 0px;
+    top: 0px; 
+    width: 129px;  
+
+}
+
+div.default div.icon {
+    width:17px;
+    height:21px;
+    border: 0;
+    background:transparent url(/assets/combo/trigger.gif) no-repeat 0 0;
+    cursor:pointer;
+    border-bottom: 1px solid #B5B8C8;
+    top:0px;
+    left: 129px; 
+
+}
+
+
+div.default div.list-wrapper {
+    left: 0px;
+    top: 21px;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    width: 146px;
+    bottom: auto;
+}
+
+div.default div.list-wrapper-up {
+    top: auto;
+    bottom: 21px;
+}
+
+div.default ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+}
+
+div.default ul.optgroup {
+    font:italic 14px tahoma, arial, helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 5px;
+    margin: 0;
+    height: auto;
+}
+
+div.default li {
+    padding: 0;
+    padding-left: 5px;
+    font:normal 14px tahoma, arial, helvetica, sans-serif;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    margin: 0;
+}
+
+div.default li.selected {
+    /*background-color:AliceBlue;*/
+    border:1px solid lightSteelBlue;
+}
+
+div.default li.active {
+    background-color: rgb(223, 232, 246);
+}
+
+div.default ul.optgroup li {
+    padding-left: 10px;
+}
+
+div.default input.empty {
+    color: gray;
+}

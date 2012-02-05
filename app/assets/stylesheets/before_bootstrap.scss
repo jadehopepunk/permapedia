@@ -1,0 +1,15 @@
+.input input, .input textarea {
+  display: inline-block;
+  float: none;
+  margin-left: 0;
+  width: 450px;
+}
+
+.small input, .small textarea {
+  width: auto;
+  width: 230px;
+}
+
+.input input.integer {
+  width: 90px;
+}

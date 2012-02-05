@@ -1,0 +1,68 @@
+.page_body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #FFF;
+}
+
+body {
+  padding-top: 40px;
+  background-color: #EEEEEE;
+}
+
+.footer {
+  background-color: #EEEEEE;
+  border-top: 1px solid #E5E5E5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.024) inset;
+  min-width: 940px;
+  padding: 30px 0;
+  text-shadow: 0 1px 0 #FFFFFF;
+  margin-top: 0;
+  
+  p {
+    color: #555555;
+  }
+  
+  .licence {
+    p {
+      text-align: right;
+    }
+    
+    img {
+      margin-left: 10px;
+      margin-top: 2px;
+    }
+  }  
+}
+
+.topbar {
+  p {
+    color: #999;
+  }
+}
+
+.page_explanation {
+  margin-bottom: 2em;
+}
+
+.section {
+  margin: 1em 0;
+}
+
+.tabbed_subsection {
+  h2.top_available {
+    margin-bottom: 0;
+  }
+}
+
+div.todo {
+  background-color: #FEE9CC;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 10px;
+  padding: 3px 6px;
+}
+
+.rambling_text {
+  h2 {
+    margin-top: 1.2em;
+  }
+}

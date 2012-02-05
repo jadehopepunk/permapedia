@@ -1,0 +1,77 @@
+td.amount_with_unit {
+  white-space: nowrap;
+}
+
+.nested_form {
+  .nested-form-error {
+    display: block;
+    color: #B94A48;
+    margin-left: 150px;
+  }
+
+  table.nested_form_contents {
+    margin-left: 150px;
+    width: 1px;
+
+    thead {
+      th {
+        width: 1px;
+        white-space: nowrap;
+      }
+    }
+    
+    tbody {
+      td {
+        width: 1px;
+        
+        .help-inline {
+          color: #B94A48;
+        }
+        
+        .access_level {
+          white-space: nowrap;
+          
+          .add-on {
+            margin-left: 0.5em;
+          }
+        }
+      }
+
+      td.action {
+        vertical-align: middle;
+      }
+
+      td.amount_with_unit {
+        .input-append {
+          white-space: nowrap;
+          width: 140px;
+        }
+      }
+      
+      tr.nested-record-with-errors {
+        td {
+          input, select, textarea {
+            border-color: #B94A48;
+          }
+        }
+      }
+    }
+            
+    > .fields {
+      border-bottom: 1px solid #DDDDDD;
+      
+      > .clearfix {
+        width: 240px;
+        display: inline-table;
+      }
+    }
+  }
+
+  table.nested-records-with-errors {
+    border-color: #B94A48;
+  }    
+
+  .form-stacked {
+    padding: 0;
+  }
+}
