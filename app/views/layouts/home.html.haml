@@ -1,38 +1,113 @@
 !!!
-%html
+%html{:lang => "en"}
   %head
     = render :partial => 'layouts/head'
+    %link{:href => "/assets/stylesheets/twitter/bootstrap/responsive.css", :rel => "stylesheet"}
   %body
-    = render :partial => 'layouts/topbar'
-    %header#overview.masthead.jumbotron
-      .inner
-        .container
-          %h1 Create a Habitat for Humans
-          %p.lead
-            A permaculture forest garden gives you food, fuel, and enjoyment for only minimal maintenance.<br />
-            Using <em>Habitat</em>, you can design, implement and manage one yourself.
-    .quickstart
-      .container
-        .row
-          .span5
-            %h6 Design
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} Project name
+          .nav-collapse
+            %ul.nav
+              %li.active
+                %a{:href => "#"} Home
+              %li
+                %a{:href => "#about"} About
+              %li
+                %a{:href => "#contact"} Contact
+            %p.navbar-text.pull-right
+              Logged in as
+              %a{:href => "#"} username
+          / /.nav-collapse
+    .container-fluid
+      .row-fluid
+        .span3
+          .well.sidebar-nav
+            %ul.nav.nav-list
+              %li.nav-header Sidebar
+              %li.active
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li.nav-header Sidebar
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li.nav-header Sidebar
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+              %li
+                %a{:href => "#"} Link
+          / /.well
+        / /span
+        .span9
+          .hero-unit
+            %h1 Hello, world!
+            %p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
             %p
-              Work alone or with a permaculture designer to plan your sustainable, perennial garden.
-            %p
-              Collaborate with other users to share data on useful plants, yields and relationships.
-          .span5
-            %h6 Implement
-            %p
-              Track your planting, growth rates, and budget. 
-            %p
-              <em>Habitat</em> can help with any scale, from small backyard gardens to commercial agroforestry.
-          .span5
-            %h6 Enjoy
-            %p
-              Manage your harvests, maintenance tasks, and compare results to your original goals. Share successes and failures
-              with other gardeners to help expand the body of global knowledge.
-    .page_body
-      .container
-        = render :partial => 'layouts/notice'
-        = yield
+              %a.btn.btn-primary.btn-large Learn more &raquo;
+          .row-fluid
+            .span4
+              %h2 Heading
+              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              %p
+                %a.btn{:href => "#"} View details &raquo;
+            / /span
+            .span4
+              %h2 Heading
+              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              %p
+                %a.btn{:href => "#"} View details &raquo;
+            / /span
+            .span4
+              %h2 Heading
+              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              %p
+                %a.btn{:href => "#"} View details &raquo;
+            / /span
+          / /row
+          .row-fluid
+            .span4
+              %h2 Heading
+              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              %p
+                %a.btn{:href => "#"} View details &raquo;
+            / /span
+            .span4
+              %h2 Heading
+              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              %p
+                %a.btn{:href => "#"} View details &raquo;
+            / /span
+            .span4
+              %h2 Heading
+              %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              %p
+                %a.btn{:href => "#"} View details &raquo;
+            / /span
+          / /row
+        / /span
+      / /row
+      / %hr/
+      
     = render :partial => 'layouts/footer'

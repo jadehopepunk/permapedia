@@ -1,4 +1,7 @@
 %title Permapedia - A global, collaborative encyclopedia of permaculture plants, guilds and patterns
-= stylesheet_link_tag "forem/twist/style" if request.path.starts_with?('/forums')
+/ Le HTML5 shim, for IE6-8 support of HTML elements
+/[if lt IE 9]
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+/ Le styles
 = stylesheet_link_tag "application"
 = csrf_meta_tags

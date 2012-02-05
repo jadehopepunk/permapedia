@@ -3,15 +3,17 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
- *= require mapping
- *= require jquery-ui-bootstrap
- *= require before_bootstrap
+ *= rXXequire mapping
+ *= rXXequire jquery-ui-bootstrap
+ *= rXXequire before_bootstrap
  *= require twitter/bootstrap
- *= require bootstrap
- *= require bootstrap_additions
- *= require nested_form_bootstrap
- *= require record_presentation 
- *= require combo/combo
- *= require combo/skins/default/default
- *= require_tree .
+ *= require twitter/bootstrap/responsive
+ *= rXXequire bootstrap
+ *= rXXequire bootstrap_additions
+ *= rXXequire nested_form_bootstrap
+ *= rXXequire record_presentation 
+ *= rXXequire combo/combo
+ *= rXXequire combo/skins/default/default
+ *= require layout
 */
+

@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    = render :partial => 'layouts/head'
+  %body
+    = render :partial => 'layouts/topbar'
+    %header#overview.masthead.jumbotron
+      .inner
+        .container
+          %h1 Create a Habitat for Humans
+          %p.lead
+            A permaculture forest garden gives you food, fuel, and enjoyment for only minimal maintenance.<br />
+            Using <em>Habitat</em>, you can design, implement and manage one yourself.
+    .quickstart
+      .container
+        .row
+          .span5
+            %h6 Design
+            %p
+              Work alone or with a permaculture designer to plan your sustainable, perennial garden.
+            %p
+              Collaborate with other users to share data on useful plants, yields and relationships.
+          .span5
+            %h6 Implement
+            %p
+              Track your planting, growth rates, and budget. 
+            %p
+              <em>Habitat</em> can help with any scale, from small backyard gardens to commercial agroforestry.
+          .span5
+            %h6 Enjoy
+            %p
+              Manage your harvests, maintenance tasks, and compare results to your original goals. Share successes and failures
+              with other gardeners to help expand the body of global knowledge.
+    .page_body
+      .container
+        = render :partial => 'layouts/notice'
+        = yield
+    = render :partial => 'layouts/footer'
