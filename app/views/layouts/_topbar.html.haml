@@ -7,9 +7,11 @@
         %span.icon-bar
       %a.brand{:href => "/"} Permapedia
       .nav-collapse
-        %ul.nav
-          %li.active
-            %a{:href => "/plants"} Plants
+      
+        - semantic_navigation :site_steps, :html => {:class => 'nav'} do |n|
+          = n.item 'Plants', :link => plants_path, :highlights_on => controllers_array('plants')
+          = n.item 'Taxa', :link => taxa_path, :highlights_on => controllers_array('taxa')
+      
         %p.navbar-text.pull-right
           Logged in as
           %a{:href => "#"} username

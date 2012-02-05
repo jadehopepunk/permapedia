@@ -11,11 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120205070026) do
+ActiveRecord::Schema.define(:version => 20120205073325) do
 
   create_table "species", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "taxa", :force => true do |t|
+    t.string   "genus_name"
+    t.string   "species_name"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end

@@ -20,7 +20,7 @@ gem 'cocoon'
 gem 'rails3-jquery-autocomplete'
 gem "tabletastic"
 gem 'foreigner'
-
+gem 'navigasmic'
 
 group :test, :development do
   gem 'capistrano'
