@@ -17,6 +17,8 @@ Spork.prefork do
   # steps to use the XPath syntax.
   Capybara.default_selector = :css
 
+  require 'webmock/cucumber'
+
 end
  
 Spork.each_run do

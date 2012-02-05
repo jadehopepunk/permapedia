@@ -28,17 +28,17 @@ group :test, :development do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'spork'
-  # gem 'ruby_gntp'
-  # gem 'rspec-rails', "~> 2.6"
-  # gem 'guard'
-  # gem 'guard-spork'
-  # gem 'guard-cucumber'
-  # gem 'guard-pow'
-  # gem 'guard-bundler'
-  # gem 'guard-rspec'
-  # gem 'guard-rake'
-  # gem 'launchy'
-  # gem 'machinist', '>= 2.0.0.beta2'
-  # gem 'webmock', :require => false
-  # gem 'ffaker'
+  gem 'webmock', :require => false
+  gem 'ruby_gntp'
+  gem 'rspec-rails', "~> 2.6"
+  gem 'guard'
+  gem 'guard-spork'
+  gem 'guard-cucumber'
+  gem 'guard-pow'
+  gem 'guard-bundler'
+  gem 'guard-rspec'
+  gem 'guard-rake'
+  gem 'launchy'
+  gem 'machinist', '>= 2.0.0.beta2'
+  gem 'ffaker'
 end
