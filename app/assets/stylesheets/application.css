@@ -9,6 +9,8 @@
  *= require twitter/bootstrap
  *= require layout
  *= require twitter/bootstrap/responsive
+ *= require taxonomy
+ 
  *= rXXequire bootstrap
  *= rXXequire bootstrap_additions
  *= rXXequire nested_form_bootstrap

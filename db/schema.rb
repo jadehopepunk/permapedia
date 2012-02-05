@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120205073325) do
+ActiveRecord::Schema.define(:version => 20120205082135) do
 
   create_table "species", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(:version => 20120205073325) do
     t.string   "species_name"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "species_id"
   end
+
+  add_index "taxa", ["species_id"], :name => "taxa_species_id_fk"
+
+  add_foreign_key "taxa", "species", :name => "taxa_species_id_fk"
 
 end

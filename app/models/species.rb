@@ -1,5 +1,11 @@
 class Species < ActiveRecord::Base
+  has_many :taxon, :dependent => :destroy
+  
+  def scientific_name
+    taxon.first
+  end
+  
   def name
-    "Species #{id}" unless new_record?
+    scientific_name
   end
 end
