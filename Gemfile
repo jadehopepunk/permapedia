@@ -15,6 +15,12 @@ gem 'mysql2'
 gem 'haml'
 gem 'inherited_resources'
 gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
+gem 'cocoon'
+gem 'rails3-jquery-autocomplete'
+gem "tabletastic"
+gem 'foreigner'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
