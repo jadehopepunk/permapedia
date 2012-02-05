@@ -9,10 +9,10 @@ module FormHelper
   end
   
   def form_actions(f, cancel_link = {:action => :index})
-    content_tag(:div, :class => 'actions') do
+    content_tag(:div, :class => 'form-actions') do
       [
-        f.button(:submit, :class => 'primary'),
-        link_to('Cancel', cancel_link, :class => "btn")
+        f.button(:submit, :class => 'btn-primary'),
+        button_tag('Cancel', :onclick => "document.location = #{url_for(cancel_link).to_json}; return false;", :class => "btn")
       ].join(' ').html_safe
     end
   end

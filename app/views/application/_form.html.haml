@@ -1,5 +1,4 @@
-= simple_form_for resource do |f|
+= simple_form_for resource, :html => { :class => 'form-horizontal' } do |f|
   = form_errors(f)
-  .inputs
-    = f.input :name
+  = f.input :name
   = form_actions(f)

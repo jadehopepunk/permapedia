@@ -21,6 +21,7 @@ gem 'rails3-jquery-autocomplete'
 gem "tabletastic"
 gem 'foreigner'
 gem 'navigasmic'
+gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 
 group :test, :development do
   gem 'capistrano'
