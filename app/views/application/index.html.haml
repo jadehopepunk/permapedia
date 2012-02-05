@@ -1,0 +1,4 @@
+%h1= "Listing #{resource_title.pluralize}"
+.well
+  = link_to "New #{resource_title}", {:action => :new}, :class => 'btn'
+= render :partial => 'table'

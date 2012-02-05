@@ -1,7 +1,15 @@
-.topbar
-  .topbar-inner
-    .container
-      %a.brand{:href => "/home"} Permapedia
-      %ul.nav
-
-      .pull-right
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container-fluid
+      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => "/"} Permapedia
+      .nav-collapse
+        %ul.nav
+          %li.active
+            %a{:href => "/plants"} Plants
+        %p.navbar-text.pull-right
+          Logged in as
+          %a{:href => "#"} username
